@@ -108,9 +108,8 @@ if __name__ == "__main__":
       t = 9*t/5 + 32
       suffix = "F"
     if opts.csv:
-      now = datetime.datetime.now()
-      time = "%02d:%02d" % (now.hour, now.minute)
-      print "%s,%0.1f,%d" % (time, t, n.get_humidity())
+      now = datetime.datetime.now().strftime("%x %X")
+      print "%s,%0.1f,%d" % (now, t, n.get_humidity())
     else:
       print "%0.1f° %s" % (t, suffix),
       print "@ %d%% humidity" % n.get_humidity()
