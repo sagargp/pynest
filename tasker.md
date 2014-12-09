@@ -1,0 +1,15 @@
+Action                               | Phrase
+-------                              | --------
++2 degrees, set mode to heat         | "Ok Google, turn up the heat"
+                                     | "Ok Google, it's too cold"
+                                     | "Ok Google, heat up"
+-2 degrees, set mode to heat         | "Ok Google, turn down the heat"
+                                     | "Ok Google, it's getting warm"
+                                     | "Ok Google, cool down"
+-2 degrees, set mode to cool         | "Ok Google, it's too hot"
+                                     | "Ok Google, make it colder"
+Set temp to N, mode unchanged        | "Ok Google, set the temperature to N degrees"
+                                     | "Ok Google, set the thermostat to N degrees"
+                                     | "Ok Google, set the thermostat to N"
+                                     | "Ok Google, set it to N degrees"
+Set temp to N, set mode as necessary | "Ok Google, make it N degrees"
