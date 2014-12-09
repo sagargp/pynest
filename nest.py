@@ -145,10 +145,11 @@ if __name__ == "__main__":
         print "%0.1f° %s" % (t, suffix),
         print "@ %d%% humidity" % n.get_humidity(),
       
-      mode = n.get_temperature_type()
-      if mode == "heat": mode = "heating"
-      elif mode == "cool": mode = "cooling"
-      print "(%s)" % mode
+      if not opts.csv:
+        mode = n.get_temperature_type()
+        if mode == "heat": mode = "heating"
+        elif mode == "cool": mode = "cooling"
+        print "(%s)" % mode
 
     else:
       if opts.mode:
